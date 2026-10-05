@@ -6,6 +6,8 @@ Visual atualizado conforme a segunda referência fornecida: hero fotográfico es
 
 ## Área de serviços
 
+Sobre, visão geral de Serviços, Projetos, case e Contato usam a direção visual escura em `public/styles/institutional.css`, com detalhes dourados e superfícies em grafite. Sobre e Serviços seguem as referências fornecidas, com luz dourada discreta e divisórias; Projetos e Contato mantêm aberturas fotográficas. O formulário de Contato mantém um painel claro para leitura. Essa folha é carregada apenas nessas páginas; Home e páginas individuais de serviços mantêm seus estilos próprios.
+
 `/servicos/` é uma visão resumida com quatro acessos. As páginas `/servicos/trafego-pago/`, `/servicos/social-media/`, `/servicos/sites/` e `/servicos/landing-pages/` têm hero próprio, quatro blocos de entregas, processo em quatro etapas, público indicado e orçamento com serviço pré-selecionado no Contato. A âncora `#abordagem` leva ao processo. As imagens são demonstrativas e identificadas, sem métricas de clientes. Somente Sites apresenta o projeto informado Fábio Lima Noivos, com imagens e detalhes pendentes; nenhum case adicional foi inventado.
 
 Conteúdo individual em `src/data/service-pages.mjs`, componentes em `src/components/service-sections.mjs` e estilos isolados em `public/styles/services.css` (carregados apenas nas rotas de serviços). Escopos específicos são alinhados antes da contratação. As rotas também respondem localmente sem barra final.

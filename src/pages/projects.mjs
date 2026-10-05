@@ -1,7 +1,7 @@
 import { projects } from '../data/site.mjs';
 import { intro, cta, projectImage } from '../components/sections.mjs';
 export function projectsPage() {
-  return `${intro('PROJETOS', 'Estratégia que<br>ganha forma.', 'Um espaço para apresentar o trabalho desenvolvido pela JG. Cada projeto tem seu contexto e seu objetivo.')}<section class="container portfolio" aria-label="Portfólio">${projects.map(p => `<article>${projectImage()}<div class="project-info"><div><p class="eyebrow">${p.service.toUpperCase()}</p><h2>${p.name}</h2></div><p>${p.description}</p><a class="text-link" href="/projetos/${p.slug}/">Ver case completo</a></div></article>`).join('')}</section>${cta()}`;
+  return `${intro('PROJETOS', 'Estratégia que<br><em>ganha forma.</em>', 'Um espaço para apresentar o trabalho desenvolvido pela JG. Cada projeto tem seu contexto e seu objetivo.', 'office-desk.jpg')}<section class="container portfolio" aria-label="Portfólio">${projects.map(p => `<article>${projectImage()}<div class="project-info"><div><p class="eyebrow">${p.service.toUpperCase()}</p><h2>${p.name}</h2></div><p>${p.description}</p><a class="text-link" href="/projetos/${p.slug}/">Ver case completo</a></div></article>`).join('')}</section>${cta()}`;
 }
 export function casePage() {
   const p = projects[0];
