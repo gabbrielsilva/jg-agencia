@@ -1,0 +1,26 @@
+const paths = {
+  settings: '<path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="9" cy="18" r="2" fill="currentColor"/>',
+  building: '<path d="M3 22V8h8v14M11 22V2h10v20M6 11v1m0 3v1m0 3v1m8-14v1m4-1v1m-4 3v1m4-1v1m-4 3v1m4-1v1M1 22h22"/>',
+  cart: '<path d="M2 3h3l3 13h12l2-9H6"/><circle cx="10" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>',
+  book: '<path d="M3 4h6c2 0 3 1 3 2 0-1 1-2 3-2h6v16h-6c-2 0-3 1-3 2 0-1-1-2-3-2H3zM12 6v16"/>',
+  briefcase: '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V3h8v4M2 12l10 3 10-3M12 12v5"/>',
+  edit: '<path d="M16 3l5 5L9 20l-6 1 1-6zM14 5l5 5"/>',
+  image: '<rect x="2" y="3" width="20" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="M3 18l6-6 4 4 3-5 6 7"/>',
+  mobile: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/>',
+  code: '<path d="M7 6l-5 6 5 6M17 6l5 6-5 6M14 3l-4 18"/>',
+  palette: '<path d="M12 2a10 10 0 100 20c3 0 4-2 2-4-1-1 0-3 2-3h3c5 0 3-13-7-13z"/><circle cx="7" cy="8" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="17" cy="8" r="1"/><circle cx="6" cy="13" r="1"/>',
+  megaphone: '<path d="M3 8h5l12-5v18L8 16H3zM8 16l2 6H6l-2-6M8 8v8"/>',
+  chart: '<path d="M5 20v-7m5 7V8m5 12V4m5 16V10"/>',
+  social: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+  monitor: '<rect x="2" y="3" width="20" height="14" rx="1"/><path d="M12 17v4m-4 0h8"/>',
+  page: '<path d="M5 2h9l5 5v15H5zM14 2v6h5M8 12h8M8 16h8"/>',
+  shield: '<path d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6zM8 11l3 3 5-6"/>',
+  people: '<path d="M16 21v-3c0-3-2-5-5-5s-5 2-5 5v3m11-9c3 0 5 2 5 5v4M2 21v-4c0-2 1-4 3-5"/><circle cx="11" cy="6" r="4"/><path d="M17 2a4 4 0 010 8"/>',
+  target: '<circle cx="11" cy="13" r="9"/><circle cx="11" cy="13" r="5"/><path d="M11 13l9-9m-4 0h4v4"/>',
+  search: '<circle cx="10" cy="10" r="7"/><path d="M15 15l6 6"/>',
+  plan: '<rect x="4" y="4" width="16" height="18" rx="2"/><path d="M9 2h6v5H9zM8 12l2 2 5-5M8 18h8"/>',
+  rocket: '<path d="M14 4c3-2 7-2 7-2s0 4-2 7l-7 7-5-5zM7 11l-5 1 4-6 6-1M12 16l-1 6 6-4 1-6M5 16l-3 6 6-3"/><circle cx="16" cy="7" r="1.5"/>',
+  chat: '<path d="M3 3h18v14H10l-6 4v-4H3z"/>',
+  bolt: '<path d="M13 2L5 13h6l-1 9 9-13h-6z"/>'
+};
+export function icon(name) { return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.monitor}</svg>`; }
